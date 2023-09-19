@@ -15,6 +15,9 @@ module.exports = {
         use: ['babel-loader'],
       },
     ],
+    resolve: {
+      extensions: [".js", ".jsx", "css"]
+    },
   },
   output: {
     filename: '[name].js',
