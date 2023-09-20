@@ -54,6 +54,9 @@
   "ignorePatterns": [
     "dist/",
     "build/",
-    "app/assets/"
+    "app/assets/",
+    "node_modules/",
+    "**/node_modules/",
+    "/**/node_modules/*"
   ]
 }

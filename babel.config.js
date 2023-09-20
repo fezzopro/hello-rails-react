@@ -17,6 +17,7 @@ module.exports = function (api) {
       ]
     ].filter(Boolean),
     plugins: [
+      "@babel/plugin-syntax-jsx",
       process.env.WEBPACK_SERVE && 'react-refresh/babel',
       isProductionEnv && ['babel-plugin-transform-react-remove-prop-types',
         {
