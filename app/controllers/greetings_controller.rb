@@ -1,7 +1,7 @@
 class GreetingsController < ApplicationController
   def index
     @messages = Message.all
-    @random_greeting = { greeting: random_greeting }
+    render json: @random_greeting = { greeting: random_greeting }
   end
 
   def random_greeting
